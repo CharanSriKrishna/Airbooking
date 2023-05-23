@@ -1,0 +1,4 @@
+flask
+datetime
+mysql.connector
+mysql.connector
