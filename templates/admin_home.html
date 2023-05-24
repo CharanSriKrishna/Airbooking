@@ -41,5 +41,17 @@
             </button>
         </a>
     </div>
+    <div style="margin: 30px ;">
+        {%for flight in flights %}
+            <div style="margin-top: 10px; margin-left: 20px ;margin-bottom: 10px; background-color: rgb(202, 201, 201);">
+                <span style="margin: 10px ;color: rgb(0, 0, 0);">Flight Id :  {{flight['flight_id']}}</span>
+                <span style="margin: 10px ;color: rgb(0, 0, 0);">Flight Name :  {{flight['flight_name']}}</span>
+                <div class="d-flex"> 
+                    <span style="margin: 10px ;color: rgb(0, 0, 0);">Depature Time :  {{flight['flight_time']}}</span>
+                </div>
+                <span style="margin: 10px ;color: rgb(0, 0, 0);">Seats Available :  {{flight['empty_seat']}}</span>
+            </div>
+        {%endfor%}
+    </div>
 </body>
 </html>

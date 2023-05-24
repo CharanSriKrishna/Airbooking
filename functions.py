@@ -120,6 +120,11 @@ def flight_detail(flight_id):
         fcompany = row['flight_company']
         fdate = row['flight_time'].strftime('%d/%m/%Y')
         ftime = row['flight_time'].strftime('%H:%M:%S')
-        result = [fname,fcompany ,fdate,ftime]
+        seats = row['empty_seat']
+        result = [fname,fcompany ,fdate,ftime ,seats]
         return result
     return False
+
+#display all flights 
+def display_flights():
+    return sql.all_flights()

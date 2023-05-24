@@ -118,7 +118,9 @@ def alogin():
 # Admin Home Page
 @app.route("/adminhome")
 def adminhome():
-  return render_template("admin_home.html", admin = session['admin_id'] )
+  flights = []
+  flights = func.display_flights()
+  return render_template("admin_home.html", admin = session['admin_id'] ,flights= flights)
 
 # Operations
 

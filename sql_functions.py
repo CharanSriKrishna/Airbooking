@@ -148,6 +148,13 @@ def get_flights(time):
     result = cursor.fetchall()
     return result
 
+#function to display all flights():
+def all_flights():
+    prompt = f"""select * from flight_details;
+             """
+    cursor.execute(prompt)
+    result = cursor.fetchall()
+    return result
 
 #BOOKING 
 
