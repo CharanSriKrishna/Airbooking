@@ -1,6 +1,6 @@
 
 # Airbooking
-Using the webapp, we can book flights and search flights based on timing . and display you past and current bookings .
+Using the webapp, we can book flights and search flights based on timing . and display you past and current bookings .(payment is not added in booking)
 
 
 ## Set Up 
