@@ -10,10 +10,13 @@ app = Flask(__name__, template_folder="templates")
 app.secret_key = "supersecretkey"
 
 
+
 # Main page of Airbooking
 @app.route("/")
 def main():
+  sql.connection.reconnect()
   return render_template("front_page.html")
+
 
 
 # USER 

@@ -3,12 +3,16 @@ import mysql.connector
 import datetime 
 
 #establishing connection
-String = 'Your Connection details'
-connection = mysql.connector.connect(
-    String
-)
-cursor = connection.cursor(dictionary=True)
+def connect():  
+    String = "connection string"
+    connection = mysql.connector.connect(
+        String 
+    )
+    
+    return connection
 
+connection = connect()
+cursor = connection.cursor(dictionary=True)
 
 
 ## USER
