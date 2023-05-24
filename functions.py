@@ -126,5 +126,5 @@ def flight_detail(flight_id):
     return False
 
 #display all flights 
-def display_flights():
+def display_flights_details():
     return sql.all_flights()

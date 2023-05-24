@@ -119,7 +119,7 @@ def alogin():
 @app.route("/adminhome")
 def adminhome():
   flights = []
-  flights = func.display_flights()
+  flights = func.display_flights_details()
   return render_template("admin_home.html", admin = session['admin_id'] ,flights= flights)
 
 # Operations

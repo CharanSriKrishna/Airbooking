@@ -3,12 +3,9 @@ import mysql.connector
 import datetime 
 
 #establishing connection
+String = 'Your Connection details'
 connection = mysql.connector.connect(
-    host = "localhost",
-    user = "root",
-    password = "csk1234*csK",
-    database = "airbooking"
-
+    String
 )
 cursor = connection.cursor(dictionary=True)
 
